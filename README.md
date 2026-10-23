@@ -1,9 +1,11 @@
 # TVBar releases
 
-Public binary-only release channel for TVBar. Source code remains private.
+Public binary-only releases for TVBar. App source remains private.
 
-Requires **macOS 27 or later**. Each release contains a Developer ID signed and notarized app in `TVBar-<version>-arm64.zip` (or `TVBar.zip`), with matching tag `v<version>` and release notes.
+## 0.5.2
 
-AppUpdater validates the app signature, developer Team ID, bundle ID, and release version before replacing an installed copy.
+[Download TVBar 0.5.2](https://github.com/erikrole/tvbar-releases/releases/tag/v0.5.2)
 
-No updater-enabled build has been published to this channel yet.
+Requires **macOS 27 or later** and **Apple Silicon**. The ZIP contains a Developer ID signed and notarized app with its ticket stapled. The release includes a SHA-256 checksum and a provenance manifest recording the exact source commit.
+
+AppUpdater checks this channel for future versions and verifies signature, Team ID, bundle ID, and version before replacement.
